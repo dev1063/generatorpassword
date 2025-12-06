@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramientas Web</title>
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+  <!-- Menú de recursos usando details/summary -->
+  <div class="menu">
+    <details>
+      <summary>=</summary>
+      <p><a href="#">Generador QR</a></p>
+      <p><a href="#">Más próximamente</a></p>
+    </details>
+
+    <details>
+      <summary>Otros recursos</summary>
+      <p><a href="#">Link 1</a></p>
+      <p><a href="#">Link 2</a></p>
+    </details>
+  </div>
+
+  <!-- Contenedor Generador de Contraseñas -->
+  <div class="container">
+    <h2>Generador de Contraseñas</h2>
+
+    <label for="length">Longitud:</label>
+    <input type="number" id="length" min="4" max="50" value="12">
+
+    <div class="checkbox-group">
+      <label><input type="checkbox" id="lowercase" checked> Minúsculas</label>
+      <label><input type="checkbox" id="uppercase" checked> Mayúsculas</label>
+      <label><input type="checkbox" id="numbers" checked> Números</label>
+      <label><input type="checkbox" id="symbols"> Símbolos</label>
+    </div>
+
+    <button id="generateBtn">Generar Contraseña</button>
+
+    <p id="password"></p>
+  </div>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>

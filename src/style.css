@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: #fff;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.menu {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.menu details {
+  background: rgba(255,255,255,0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.menu summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+  list-style: none;
+}
+
+.menu p {
+  margin: 5px 0 0 10px;
+}
+
+.menu a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 350px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 500;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.checkbox-group label {
+  flex: 1 1 45%;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.checkbox-group input {
+  margin-right: 8px;
+  accent-color: #ffd700;
+  transform: scale(1.2);
+}
+
+button#generateBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ffd700;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button#generateBtn:hover {
+  background: #ffc107;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#password {
+  margin-top: 25px;
+  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.3);
+  word-break: break-all;
+  user-select: all;
+}
